@@ -28,3 +28,17 @@ console.log(imc);
 
 let tdImc = paciente.querySelector(".info-imc");
 tdImc.textContent = imc;
+
+//validação de dados
+if(peso <= 0 || peso >= 1000 ) {
+    tdImc.textContent = "Peso inválido!"
+    
+    }
+    if(altura <= 0 || altura >= 3 ) {
+    tdImc.textContent = "Altura inválida!"
+    
+    }
+    
+    //DESAFIO!!
+    //FAZER APARECER O ERRO "PESO INVÁLIDO"
+    //NA CÉLULA DE IMC NA TABELA
